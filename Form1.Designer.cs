@@ -338,7 +338,7 @@ namespace CRUDDapperRepositoryPattern
             addButton.Name = "addButton";
             addButton.Size = new Size(75, 25);
             addButton.TabIndex = 1;
-            addButton.Text = "Add";
+            addButton.Text = "Insert";
             addButton.UseVisualStyleBackColor = true;
             addButton.Click += addButton_Click;
             // 

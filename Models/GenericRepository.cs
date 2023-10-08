@@ -16,7 +16,7 @@ namespace CRUDDapperRepositoryPattern.Models
             _connection = AppConnection.GetConnection();
         }
 
-        public virtual bool Add(T entity)
+        public virtual bool Insert(T entity)
         {
             throw new NotImplementedException();
         }

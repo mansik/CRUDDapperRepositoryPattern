@@ -155,7 +155,7 @@ namespace CRUDDapperRepositoryPattern
                     // Insert
                     if (objState == EntityState.Added)
                     {
-                        studentRepository.Add(student);
+                        studentRepository.Insert(student);
                     }
                     // Update
                     else if (objState == EntityState.Changed)

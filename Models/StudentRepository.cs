@@ -19,7 +19,7 @@ namespace CRUDDapperRepositoryPattern.Models
             //_connection = AppConnection.Connection;
         }
 
-        public override bool Add(Student student)
+        public override bool Insert(Student student)
         {
             int rowsEffected = 0;
             try
