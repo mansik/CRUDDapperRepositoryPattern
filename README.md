@@ -13,9 +13,9 @@
 * 프로젝트 생성: [ ] .Net Framework, [x] .Net WinForm(windows form)
 * Package 
   * [ ] DevExpress 18.2
-* NuGet
-  * [x] Dapper
+* NuGet  
   * [x] System.Data.SqlClient 
+  * [x] Dapper
 
 ## 작업
 * Student.cs: class는 반드시 public로 선언해야 DataGridView에 데이터 원본 선택시 나타난다.(studentBindingSource가 생성됨)
