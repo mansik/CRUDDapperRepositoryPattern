@@ -1,9 +1,4 @@
 ﻿using CRUDDapperRepositoryPattern.Models;
-using Dapper;
-using System.Configuration;
-using System.Data;
-using System.Data.SqlClient;
-using System.Linq.Expressions;
 
 namespace CRUDDapperRepositoryPattern
 {
@@ -65,7 +60,7 @@ namespace CRUDDapperRepositoryPattern
         {
             try
             {
-                IStudentRepository studentRepository = new StudentRepository();
+                StudentRepository studentRepository = new();
                 studentBindingSource.DataSource = studentRepository.GetAll();
                 pnlContainer.Enabled = false;
 
@@ -127,7 +122,7 @@ namespace CRUDDapperRepositoryPattern
                 {
                     if (studentBindingSource.Current is Student student)
                     {
-                        IStudentRepository studentRepository = new StudentRepository();
+                        StudentRepository studentRepository = new();
                         if (studentRepository.Delete(student.StudentID))
                         {
                             studentBindingSource.RemoveCurrent();
@@ -151,7 +146,7 @@ namespace CRUDDapperRepositoryPattern
                 studentBindingSource.EndEdit();
                 if (studentBindingSource.Current is Student student)
                 {
-                    IStudentRepository studentRepository = new StudentRepository();
+                    StudentRepository studentRepository = new();
                     // Insert
                     if (objState == EntityState.Added)
                     {
